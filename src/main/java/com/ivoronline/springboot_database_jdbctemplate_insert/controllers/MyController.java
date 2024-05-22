@@ -20,8 +20,8 @@ public class MyController {
   @ResponseBody
   @GetMapping("/insert")
   public int insert() {
-    int    insertedRecords = myService.insert("Jill", 40);
-    return insertedRecords;
+    int    success = myService.insert("Jill", 40);
+    return success;
   }
 
 }
